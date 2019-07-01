@@ -10,8 +10,9 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:summerOnto="http://summer-school.uned.es/ontology#">
     <owl:Ontology rdf:about="https://summer-school.uned.es/ontology">
-        <dc:title xml:lang="es">Mª Luisa Díez Platas</dc:title>
+        <dc:creator xml:lang="es">Mª Luisa Díez Platas</dc:creator>
         <dc:title xml:lang="es">Ontología poesía, escuela de verano 2019</dc:title>
+        <dc:title xml:lang="es">Summer ONTOLOGY</dc:title>
         <vann:preferredNamespacePrefix xml:lang="es">summerOnto</vann:preferredNamespacePrefix>
     </owl:Ontology>
     
@@ -36,7 +37,9 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -107,20 +110,24 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
-    <!-- http://summer-school.uned.es/ontology#fechaCreacion -->
+    <!-- http://summer-school.uned.es/ontology#fecha -->
 
-    <owl:DatatypeProperty rdf:about="http://summer-school.uned.es/ontology#fechaCreacion">
+    <owl:DatatypeProperty rdf:about="http://summer-school.uned.es/ontology#fecha">
         <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Obra"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Fecha de creación de la obra</rdfs:comment>
         <rdfs:label xml:lang="es">fechaCreacion</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#fechaPersona -->
+
+    <owl:DatatypeProperty rdf:about="http://summer-school.uned.es/ontology#fechaPersona"/>
     
 
 
@@ -200,14 +207,6 @@ Podrñia ser vocabulario controlado</rdfs:comment>
     <!-- http://summer-school.uned.es/ontology#Redaccion -->
 
     <owl:Class rdf:about="http://summer-school.uned.es/ontology#Redaccion"/>
-    
-
-
-    <!-- http://summer-school.uned.es/ontology#RedaccionAnalítica -->
-
-    <owl:Class rdf:about="http://summer-school.uned.es/ontology#RedaccionAnalítica">
-        <rdfs:subClassOf rdf:resource="http://summer-school.uned.es/ontology#Redaccion"/>
-    </owl:Class>
     
 
 
