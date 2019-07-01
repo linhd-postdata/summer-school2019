@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://summer-school.uned.es/ontology#"
+     xml:base="https://summer-school.uned.es/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:summerOnto="http://summer-school.uned.es/ontology#">
+    <owl:Ontology rdf:about="https://summer-school.uned.es/ontology">
+        <dc:title xml:lang="es">Mª Luisa Díez Platas</dc:title>
+        <dc:title xml:lang="es">Ontología poesía, escuela de verano 2019</dc:title>
+        <vann:preferredNamespacePrefix xml:lang="es">summerOnto</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#esRealizadaMediante -->
+
+    <owl:ObjectProperty rdf:about="http://summer-school.uned.es/ontology#esRealizadaMediante">
+        <owl:inverseOf rdf:resource="http://summer-school.uned.es/ontology#realiza"/>
+        <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Obra"/>
+        <rdfs:range rdf:resource="http://summer-school.uned.es/ontology#Redaccion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#realiza -->
+
+    <owl:ObjectProperty rdf:about="http://summer-school.uned.es/ontology#realiza">
+        <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Redaccion"/>
+        <rdfs:range rdf:resource="http://summer-school.uned.es/ontology#Obra"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#tieneAutor -->
+
+    <owl:ObjectProperty rdf:about="http://summer-school.uned.es/ontology#tieneAutor">
+        <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Obra"/>
+        <rdfs:range rdf:resource="http://summer-school.uned.es/ontology#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#tieneCreador -->
+
+    <owl:ObjectProperty rdf:about="http://summer-school.uned.es/ontology#tieneCreador">
+        <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Redaccion"/>
+        <rdfs:range rdf:resource="http://summer-school.uned.es/ontology#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#fechaCreacion -->
+
+    <owl:DatatypeProperty rdf:about="http://summer-school.uned.es/ontology#fechaCreacion">
+        <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Obra"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Fecha de creación de la obra</rdfs:comment>
+        <rdfs:label xml:lang="es">fechaCreacion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#idioma -->
+
+    <owl:DatatypeProperty rdf:about="http://summer-school.uned.es/ontology#idioma">
+        <rdfs:comment xml:lang="es">Idioma en el que está escrita la obra o redacción</rdfs:comment>
+        <rdfs:label xml:lang="es">idioma</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://summer-school.uned.es/ontology#nombre">
+        <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">nombre y apellidos de la persona</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#tema -->
+
+    <owl:DatatypeProperty rdf:about="http://summer-school.uned.es/ontology#tema">
+        <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Obra"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Tema tratado en la obra</rdfs:comment>
+        <rdfs:label xml:lang="es">tema</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#tipoRedaccion -->
+
+    <owl:DatatypeProperty rdf:about="http://summer-school.uned.es/ontology#tipoRedaccion">
+        <rdfs:domain rdf:resource="http://summer-school.uned.es/ontology#Redaccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Tipo de redaccioon, analitica o crítica
+Podrñia ser vocabulario controlado</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#Obra -->
+
+    <owl:Class rdf:about="http://summer-school.uned.es/ontology#Obra">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Obra poética. Es un concepto abstracto</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#Persona -->
+
+    <owl:Class rdf:about="http://summer-school.uned.es/ontology#Persona"/>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#Redaccion -->
+
+    <owl:Class rdf:about="http://summer-school.uned.es/ontology#Redaccion"/>
+    
+
+
+    <!-- http://summer-school.uned.es/ontology#RedaccionAnalítica -->
+
+    <owl:Class rdf:about="http://summer-school.uned.es/ontology#RedaccionAnalítica">
+        <rdfs:subClassOf rdf:resource="http://summer-school.uned.es/ontology#Redaccion"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:comment xml:lang="es">Título de la obra</rdfs:comment>
+        <rdfs:label xml:lang="es">titulo</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
