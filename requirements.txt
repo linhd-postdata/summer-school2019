@@ -1,4 +1,6 @@
+nltk
 spacy
 pandas
 requests
 matplotlib
+scikit-learn
