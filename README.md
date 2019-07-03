@@ -10,7 +10,7 @@
 - [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/linhd-postdata/summer-school2019/master?filepath=Sesión_4_Aproximaciones_modernas_al_análisis_de_texto.ipynb)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/linhd-postdata/summer-school2019/blob/master/Sesión_4_Aproximaciones_modernas_al_análisis_de_texto.ipynb) [Sesión 4. Aproximaciones modernas al análisis de texto](https://nbviewer.jupyter.org/github/linhd-postdata/summer-school2019/blob/master/Sesión_4_Aproximaciones_modernas_al_análisis_de_texto.ipynb).
 
-- [<img src="https://img.shields.io/badge/download-PDF-green.svg">](https://github.com/linhd-postdata/summer-school2019/raw/master/Practica_final_curso_2019.pdf)
+- [<img src="https://img.shields.io/badge/download-PDF-green.svg">](https://github.com/linhd-postdata/summer-school2019/raw/master/Practica%20final/Practica_final_curso_2019.pdf)
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/linhd-postdata/summer-school2019/master?filepath=Proyecto_final.ipynb)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/linhd-postdata/summer-school2019/blob/master/Proyecto_final.ipynb) [**Práctica final**](https://nbviewer.jupyter.org/github/linhd-postdata/summer-school2019/blob/master/Proyecto_final.ipynb).
 
