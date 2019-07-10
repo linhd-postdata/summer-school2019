@@ -1,4 +1,5 @@
-entity,rdf:type,title,date,theme,hasAuthor,isRealisedThrough,typeOfRedaction,language,hasCreator,name,personDate
-https://summer-school.uned.es/resources/Obra#2cf82a2b-a960-460f-82d4-f5744ad7800e,summerOnto:Obra,Oda I. Vida Retirada,1570 aprox,la vida sencilla,https://summer-school.uned.es/resources/Persona#2cf82a2b-a960-460f-82d4-f5744ad7800e,https://summer-school.uned.es/resources/Redaccion#6ce1e595-90e6-41d7-be1f-fe24533a7936,,español,,,
-https://summer-school.uned.es/resources/Persona#2cf82a2b-a960-460f-82d4-f5744ad7800e,summerOnto:Persona,,,,,,,,,Fray Luis de León,1527-1591
-https://summer-school.uned.es/resources/Redaccion#6ce1e595-90e6-41d7-be1f-fe24533a7936,summerOnto:Redaccion,Oda I. Vida Retirada,2011,,,,analítica,español,"la profe, Nico",,
+entity;rdf:type;title;date;theme;hasAuthor;isRealisedThrough;typeOfRedaction;language;hasCreator;name;personDate
+https://summer-school.uned.es/resources/Obra#2cf82a2b-a960-460f-82d4-f5744ad7800e;summerOnto:Obra;Oda I. Vida Retirada;1570 aprox;la vida sencilla;https://summer-school.uned.es/resources/Person#2cf82a2b-a960-460f-82d4-f5744ad7800e;ttps://summer-school.uned.es/resources/Redaccion#6ce1e595-90e6-41d7-be1f-fe24533a7936;;español;;;
+https://summer-school.uned.es/resources/Personr#2cf82a2b-a960-460f-82d4-f5744ad7800e;summerOnto:Persona;;;;;;;;;Fray Luis de León;1527-1591
+https://summer-school.uned.es/resources/Redaccion#6ce1e595-90e6-41d7-be1f-fe24533a7936;summerOnto:Redaccion;Oda I. Vida Retirada;2011;;;;analítica;español;https://summer-school.uned.es/resources/Personr#2cf82a2b-a960-460f-82d4-f5744ad7800f;;
+https://summer-school.uned.es/resources/Personr#2cf82a2b-a960-460f-82d4-f5744ad7800f;summerOnto:Persona;;;;;;;;;Nico;

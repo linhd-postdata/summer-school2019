@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix summerOnto: <https://summer-school.uned.es/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+<https://summer-school.uned.es/resources/Obra#2cf82a2b-a960-460f-82d4-f5744ad7800e> a "summerOnto:Obra" ;
+	dc:title "Oda I. Vida Retirada" ;
+	<https://summer-school.uned.es/ontology/fecha> "1570 aprox" ;
+	<https://summer-school.uned.es/ontologytema> "la vida sencilla" ;
+	<https://summer-school.uned.es/ontologytieneAutor> <https://summer-school.uned.es/resources/Person#2cf82a2b-a960-460f-82d4-f5744ad7800e> ;
+	<https://summer-school.uned.es/ontologyesRealizadaMediante> <ttps://summer-school.uned.es/resources/Redaccion#6ce1e595-90e6-41d7-be1f-fe24533a7936> ;
+	<https://summer-school.uned.es/ontologyidioma> "español" .
+
+<https://summer-school.uned.es/resources/Personr#2cf82a2b-a960-460f-82d4-f5744ad7800e> a "summerOnto:Persona" ;
+	<https://summer-school.uned.es/ontologynombre> "Fray Luis de León" ;
+	<https://summer-school.uned.es/ontologyfechaPersona> "1527-1591" .
+
+<https://summer-school.uned.es/resources/Redaccion#6ce1e595-90e6-41d7-be1f-fe24533a7936> a "summerOnto:Redaccion" ;
+	dc:title "Oda I. Vida Retirada" ;
+	<https://summer-school.uned.es/ontology/fecha> "2011" ;
+	<https://summer-school.uned.es/ontologytipoRedaccion> "analítica" ;
+	<https://summer-school.uned.es/ontologyidioma> "español" ;
+	<https://summer-school.uned.es/ontologytieneCreador> <https://summer-school.uned.es/resources/Personr#2cf82a2b-a960-460f-82d4-f5744ad7800f> .
+
+<https://summer-school.uned.es/resources/Personr#2cf82a2b-a960-460f-82d4-f5744ad7800f> a "summerOnto:Persona" ;
+	<https://summer-school.uned.es/ontologynombre> "Nico" .
